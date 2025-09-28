@@ -1,0 +1,10 @@
+{
+  // Worker 名稱
+  "name": "mydatabase",
+
+  // 主程式入口
+  "main": "src/index.ts",
+
+  // 相容性日期（很重要）
+  "compatibility_date": "2025-09-28"
+}
