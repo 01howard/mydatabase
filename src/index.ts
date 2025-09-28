@@ -9,7 +9,7 @@ export default {
       const password = body.password;
 
       // 演示 SQL 注入（不安全示範！請勿用於生產環境）
-      const sql = `SELECT * FROM users WHERE username = '${username}' AND password = '${password}'`;
+      const sql = `SELECT * FROM users WHERE username = '${username}' AND password_hash = '${password}'`;
 
       // 執行查詢
       const { results } = await env.DB.prepare(sql).all();
