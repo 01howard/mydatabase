@@ -93,12 +93,14 @@ export default {
           const result = await stmt.all();
           
           if (result.results && result.results.length > 0) {
+            // *** 修改點：在成功的回應中加入 key ***
             return new Response(
               JSON.stringify({ 
                 success: true, 
                 user: result.results[0],
                 message: "登录成功！",
-                sql: sql // 返回 SQL 用于演示
+                sql: sql, // 返回 SQL 用于演示
+                key: "912203" // 將 Key 放在後端回傳
               }),
               {
                 headers: {
