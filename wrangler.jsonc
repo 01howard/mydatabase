@@ -2,10 +2,9 @@
   "name": "mydatabase",
   "main": "src/index.ts",
   "compatibility_date": "2025-09-28",
-  "bindings": [
+  "d1_databases": [
     {
-      "name": "DB",
-      "type": "d1",
+      "binding": "DB",
       "database_name": "mydatabase",
       "database_id": "82057d7c-f998-4f3f-86ba-0d9121dbabdf"
     }
